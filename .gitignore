@@ -28,6 +28,7 @@ rebel.xml
  
 # Gradle
 .gradle
+.gradle/
 /build/
 .gradletasknamecache
  
