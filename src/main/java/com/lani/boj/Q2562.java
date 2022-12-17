@@ -10,7 +10,7 @@ public class Q2562 {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int max = 0;
         int[] array = new int[9];
-        int cnt = 1;
+        int cnt = 0;
         for(int i = 0; i < array.length; i++) {
             array[i] = Integer.parseInt(bf.readLine());
             if(array[i] > max)   {
