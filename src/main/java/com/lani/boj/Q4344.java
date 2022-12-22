@@ -34,9 +34,7 @@ public class Q4344 {
             }
 
             double percent = (cnt / grades.length) * 100;
-
-            System.out.print(String.format("%.3f", percent) );
-            System.out.println("%");
+            System.out.printf("%.3f%%\n", percent);
         }
         bf.close();
     }
