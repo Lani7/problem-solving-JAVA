@@ -13,20 +13,27 @@ public class Q2292 {
         int min = 0; // 범위의 최소값
         int max = 1; // 범위의 최대값
 
-        while (true) {
-            one++;
-            if(n == one && one == 1) {
-                System.out.println(one);
-                break;
-            }
-            // 해당 원의 범위 구하기
-            min = max + 1;
-            max = min + one * 6 - 1;
+        if(n == 1) {
+            System.out.println("1");
+        }
+        else {
+            while (true) {
+                one++;
 
-            // n이 범위 사이에 있으면 one 출력한다
-            if(n <= max && n >= min ) {
-                System.out.println(one+1);
-                break;
+                // 해당 원의 범위 구하기
+                min = max + 1;
+                max = min + one * 6 - 1;
+
+                // n이 범위 사이에 있으면 one 출력한다
+                if(n < min ) {
+                    System.out.println(one);
+                    break;
+                }
+//                if(n <= max && n >= min ) {
+//                    System.out.println(one+1);
+//                    break;
+//                }
+
             }
         }
 
