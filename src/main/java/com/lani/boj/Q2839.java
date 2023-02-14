@@ -8,7 +8,6 @@ public class Q2839 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(bf.readLine());
-        // 5로 나눌 수 있는지
         boolean flag = false;
         int a = n / 5;      // 5kg 의 몫 (봉지수)
         int b = 0;          // 3kg 의 몫 (봉지수)
@@ -19,7 +18,6 @@ public class Q2839 {
                 b = (n - (5 * a)) / 3;
                 flag = true;
                 break;
-                //System.out.println(a + b);
             }
             // 아니라면 봉지수를 -1한 다음 다시 반복문으로 실행한다
             a--;
