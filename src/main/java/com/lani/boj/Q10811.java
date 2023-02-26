@@ -23,14 +23,20 @@ public class Q10811 {
             int i = Integer.parseInt(s[0]);
             int j = Integer.parseInt(s[1]);
 
-            int temp[] = new int[n + 1];
+//            int temp[] = new int[n + 1];
+//
+//            for (int l = j, o = i; l >= i; l--, o++) {
+//                temp[o] = arr[l];
+//            }
+//
+//            for (int l = i; l <= j; l++) {
+//                arr[l] = temp[l];
+//            }
 
-            for (int l = j, o = i; l >= i; l--, o++) {
-                temp[o] = arr[l];
-            }
-
-            for (int l = i; l <= j; l++) {
-                arr[l] = temp[l];
+            for (int l = i, o = j; l < o; l++, o--) {
+                int temp = arr[l];
+                arr[l] = arr[o];
+                arr[o] = temp;
             }
 
         }
