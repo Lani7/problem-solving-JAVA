@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class Q2720 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        // git push test
+
         int t = Integer.parseInt(bf.readLine());    // 테스트 개수 t
 
         for(int i = 0; i < t; i++) {
