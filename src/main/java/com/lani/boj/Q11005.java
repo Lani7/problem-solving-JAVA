@@ -18,7 +18,7 @@ public class Q11005 {
             remainder = n % b;
             n /= b;
             if(remainder > 9) {
-                char c = (char)(remainder + 55);
+                char c = (char)(remainder - 10 + 'A');
                 sb.append(c);
             }
             else    sb.append(remainder);
