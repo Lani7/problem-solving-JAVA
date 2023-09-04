@@ -38,6 +38,8 @@ public class S10994 {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(bf.readLine());
 
+        StringBuilder sb = new StringBuilder();
+
         int len = n * 4 - 3;
         arr = new char[len][len];
 
@@ -49,9 +51,11 @@ public class S10994 {
 
         for(char[] ar : arr) {
             for(char a : ar)
-                System.out.print(a);
-            System.out.println();
+                sb.append(a);
+            sb.append("\n");
         }
+
+        System.out.println(sb);
 
         bf.close();
     }
