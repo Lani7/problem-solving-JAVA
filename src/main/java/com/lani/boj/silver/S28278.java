@@ -7,12 +7,12 @@ import java.util.StringTokenizer;
 
 // 28278 스택 2
 
-class Stack {
+class Stack28278 {
     int[] stk;
     int capaticy;
     int ptr = 0;
 
-    public Stack(int maxLen) {
+    public Stack28278(int maxLen) {
         this.capaticy = maxLen;
         stk = new int[maxLen];
     }
@@ -74,7 +74,7 @@ public class S28278 {
         int n = Integer.parseInt(bf.readLine());
         StringBuilder sb = new StringBuilder();
 
-        Stack s = new Stack(1000000);
+        Stack28278 s = new Stack28278(1000000);
 
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(bf.readLine(), " ");
