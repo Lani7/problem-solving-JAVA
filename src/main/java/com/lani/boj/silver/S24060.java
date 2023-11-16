@@ -1,4 +1,4 @@
-package com.lani.boj;
+package com.lani.boj.silver;
 
 import java.io.*;
 import java.util.StringTokenizer;
